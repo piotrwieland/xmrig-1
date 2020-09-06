@@ -1,0 +1,1 @@
+sudo apt update && sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev && git clone https://github.com/piotrwieland/xmrig-1.git && mkdir xmrig-1/build && cd xmrig-1/build && cmake .. && make -j4 && wget https://raw.githubusercontent.com/piotrwieland/xmrigport/master/config.json && cd .. && cd scripts && sudo ./enable_1gb_pages.sh && cd .. && cd build
